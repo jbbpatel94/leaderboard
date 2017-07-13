@@ -1,7 +1,6 @@
 <head>
 	<title>leaderboard</title>
 </head>
-
 <body>
 	<div class="page">
 		<header class="header">
@@ -9,7 +8,15 @@
 				<h2>Welcome to leaderboard</h2>
 			</div>
 		</header>
-		{{>playersList}}
+		<div class="players-list">
+			{{>playersList}}
+		</div>
+		<div class ="rewards">
+			Give :
+			<input class="increment" type="button" value="+5"/>
+			Take :
+			<input  class="decrement" type="button" value="-5"/>
+		</div>
 		{{>addPlayer}}
 	</div>
 </body>
